@@ -1,0 +1,35 @@
+/**
+ * Pager
+ *
+ * @level X.X.
+ * @markup
+ * <ul class="c-pager">
+ *   <li class="c-pager__item c-pager__item--current">1</li>
+ *   <li class="c-pager__item"><a class="c-pager__link" href="#page=2">2</a></li>
+ *   <li class="c-pager__item"><a class="c-pager__link" href="#page=3">3</a></li>
+ *   <li class="c-pager__item"><a class="c-pager__link" href="#page=4">4</a></li>
+ *   <li class="c-pager__item c-pager__item--next"><a class="c-pager__link" href="#page=2">nächste Seite ›</a></li>
+ *   <li class="c-pager__item c-pager__item--last"><a class="c-pager__link" href="#page=4">letzte Seite »</a></li>
+ * </ul>
+ */
+.c-pager {
+  @include u-list-reset();
+  text-align: center;
+}
+
+.c-pager__item {
+  display: inline-block;
+  margin: 0 ($spacing-xs / 2);
+}
+
+.c-pager__link {
+  text-decoration: none;
+  &:hover,
+  &:focus {
+    text-decoration: underline;
+  }
+}
+
+.c-pager__item--current {
+  font-weight: $font-a-weight-bold;
+}
