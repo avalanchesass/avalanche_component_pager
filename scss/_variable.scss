@@ -1,0 +1,14 @@
+@import 'avalanchesass_component_pager/style_guide';
+
+$c-pager-namespace: '#{map-get($namespace, component)}pager' !default;
+/*---
+title:   Variable
+name:    component_pager_variable
+section: component_pager
+order:   2
+---
+
+```css
+$c-pager-namespace: '#{$c-pager-namespace}';
+```
+*/

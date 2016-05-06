@@ -1,0 +1,28 @@
+{
+  "name": "avalanchesass_component_pager",
+  "description": "Simple pager for content listings",
+  "keywords": [
+    "avalanchesass-package",
+    "eyeglass-module",
+    "sass"
+  ],
+  "version": "3.0.0",
+  "author": "Markus Oberlehner",
+  "homepage": "https://github.com/avalanchesass/avalanche_component_pager",
+  "license": "GPL v2",
+  "dependencies": {
+    "avalanchesass_function_map_get_deep": "^3.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/avalanchesass/avalanche_component_pager"
+  },
+  "bugs": {
+    "url": "https://github.com/avalanchesass/avalanche_component_pager/issues"
+  },
+  "eyeglass": {
+    "sassDir": "scss",
+    "exports": false,
+    "needs": "^0.8.2"
+  }
+}

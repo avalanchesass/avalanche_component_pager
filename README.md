@@ -1,9 +1,18 @@
-# avalanche: Component pager
-Simple pager for content listings
+# avalanchesass_component_pager
+Simple pager for content listings.
 
-## About  
-Github: https://github.com/avalanchesass/avalanche_component_pager
+## Install
+```
+npm install avalanchesass_component_pager --save
+```
 
+## Basic usage
+```css
+/* Import the main file. */
+@import 'avalanchesass_component_pager';
+```
+
+## About
 ### Author
 Markus Oberlehner  
 Twitter: https://twitter.com/MaOberlehner

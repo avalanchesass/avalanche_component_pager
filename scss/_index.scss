@@ -1,0 +1,47 @@
+@import 'avalanchesass_component_pager/style_guide';
+@import 'avalanchesass_component_pager/variable';
+
+/* extract component.css */
+/* extract component_pager.css */
+/*---
+title:   Example
+name:    component_pager_example
+section: component_pager
+order:   1
+---
+
+```example:html
+<ul class="#{$c-pager-namespace}">
+  <li class="#{$c-pager-namespace}__item #{$c-pager-namespace}__item--current">1</li>
+  <li class="#{$c-pager-namespace}__item"><a class="#{$c-pager-namespace}__link" href="#page=2">2</a></li>
+  <li class="#{$c-pager-namespace}__item"><a class="#{$c-pager-namespace}__link" href="#page=3">3</a></li>
+  <li class="#{$c-pager-namespace}__item"><a class="#{$c-pager-namespace}__link" href="#page=4">4</a></li>
+  <li class="#{$c-pager-namespace}__item #{$c-pager-namespace}__item--next"><a class="#{$c-pager-namespace}__link" href="#page=2">next ›</a></li>
+  <li class="#{$c-pager-namespace}__item #{$c-pager-namespace}__item--last"><a class="#{$c-pager-namespace}__link" href="#page=4">last »</a></li>
+</ul>
+```
+*/
+.#{$c-pager-namespace} {
+  padding-left: 0;
+  list-style-type: none;
+  text-align: center;
+}
+
+.#{$c-pager-namespace}__item {
+  display: inline-block;
+  margin: 0 (map-get($spacing, xs) / 2);
+}
+
+.#{$c-pager-namespace}__link {
+  text-decoration: none;
+  &:hover,
+  &:focus {
+    text-decoration: underline;
+  }
+}
+
+.#{$c-pager-namespace}__item--current {
+  font-weight: map-get-deep($fonts, a, weights, bold);
+}
+/* end extract component_pager.css */
+/* end extract component.css */
